@@ -32,3 +32,42 @@ print(mi_gato.nombre)
 print(mi_gato.hacer_sonido())
 print(f"tiene {mi_gato.vidas} vidas")
 print(mi_gato.comer_atun())
+
+class Nadador:
+    def nadar(self):
+        return "Nadando"
+
+class Volador:
+    def volar(self):
+        return "Volando"
+
+class Pato(Nadador, Volador): 
+    pass
+
+pato = Pato()
+print (pato.nadar () ) 
+print (pato.volar ()) 
+
+class Vehiculo:
+    def arrancar(self):
+        return "Motor encendido"
+
+class CocheElectrico(Vehiculo):
+    def arrancar(self):
+        return "Batería activada"
+        
+auto = CocheElectrico()
+print(auto.arrancar() )
+
+class Persona:
+    def __init_ (self, nombre):
+       self.nombre = nombre    
+
+class Estudiante (Persona):
+    def __init__(self, nombre, carrera):
+        super()._init_(nombre) 
+        self. carrera = carrera
+
+estudiante = Estudiante("Ana", "Ingeniería")
+print (estudiante. nombre)
+print(estudiante.carrera) 
